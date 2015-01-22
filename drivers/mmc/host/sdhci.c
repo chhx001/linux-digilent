@@ -1562,7 +1562,8 @@ static int sdhci_get_ro(struct mmc_host *mmc)
 	sdhci_runtime_pm_get(host);
 	ret = sdhci_do_get_ro(host);
 	sdhci_runtime_pm_put(host);
-	return ret;
+//	return ret;
+	return 0;
 }
 
 static void sdhci_enable_sdio_irq_nolock(struct sdhci_host *host, int enable)

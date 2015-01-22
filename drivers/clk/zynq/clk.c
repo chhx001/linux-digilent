@@ -89,7 +89,10 @@ void __init zynq_clock_init(void)
 	struct clk *clk;
 	struct device_node *np;
 	const void *prop;
-	unsigned int ps_clk_f = 33333333;
+
+//	unsigned int ps_clk_f = 33333333;
+
+	unsigned int ps_clk_f = 50000000;
 
 	pr_info("Zynq clock init\n");
 
